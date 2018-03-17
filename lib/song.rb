@@ -12,7 +12,6 @@ class Song
     @@artists << artist
     @genre = genre
     @@genres << genre
-    @@genres = @@genres.uniq
   end
 
   def count
@@ -24,7 +23,7 @@ class Song
   #  @@artists.uniq
   end
 
-  def genres
-    @@genres
+  def genre
+    @genre
   end
 end
